@@ -5,5 +5,5 @@ const N2 = parseInt(input[1]);
 if (N1 > N2) {
   console.log(N1*N2);
 } else {
-  console.log(N1/N2);
+  console.log(parseInt(N2/N1));
 }
