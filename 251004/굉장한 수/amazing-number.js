@@ -1,8 +1,7 @@
 const fs = require("fs");
-const a = Number(fs.readFileSync(0, "utf8").trim());
+const N = Number(fs.readFileSync(0, "utf8").trim());
 
-if (a % 13 === 0 || a % 19 === 0) {
-  console.log("True");
-} else {
-  console.log("False");
-}
+const isAmazing =
+  (N % 2 === 1 && N % 3 === 0) || (N % 2 === 0 && N % 5 === 0);
+
+console.log(isAmazing ? "true" : "false");
